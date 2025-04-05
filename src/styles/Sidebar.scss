@@ -1,0 +1,58 @@
+.sidebar {
+    width: 250px;
+    background-color: #000;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    color: #1db954;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    margin-bottom: 1.2rem;
+}
+
+nav a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.3s;
+}
+
+nav a:hover,
+nav .active a {
+    color: #1db954;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0.5rem 1rem;
+        background-color: #000;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    nav li {
+        margin-bottom: 0;
+    }
+}
